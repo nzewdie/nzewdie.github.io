@@ -1,43 +1,162 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  header {
-    background: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  nav a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .project {
-    background: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background: #222;
-    color: white;
-  }
-  
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #007acc;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#typed-text {
+  display: inline-block;
+  min-width: 250px; /* adjust based on your longest phrase */
+  text-align: center;
+  white-space: nowrap;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.25rem;
+  min-height: 2rem; /* prevents vertical jump too */
+}
+
+
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #007acc;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #e6e6e6;
+}
+
+button#toggle-dark {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.4rem 0.6rem;
+  background-color: white;
+  color: #007acc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project {
+  background: white;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 5px solid #007acc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+/* Scroll animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #eee;
+}
+
+body.dark-mode .project {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode header {
+  background-color: #121212;
+}
+
+body.dark-mode .resume-btn {
+  background-color: #333;
+  color: #eee;
+}
+
+body.dark-mode button#toggle-dark {
+  background-color: #eee;
+  color: #121212;
+}
+
+#toggle-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  font-size: 1.2rem;
+}
+
+#theme-icon {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  display: inline-block;
+}
+.spin {
+  transform: rotate(360deg);
+}
+
+#theme-icon {
+  transition: transform 0.4s ease, opacity 0.4s ease, background-color 0.4s ease;
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  border-radius: 50%;
+  color: white;
+}
+
+#theme-icon.moon-bg {
+  background-color: black;
+}
+
+#theme-icon.sun-bg {
+  background-color: transparent;
+  color: #f39c12; /* optional golden sun color */
+}
+
+
