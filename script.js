@@ -2,7 +2,7 @@
 const typedText = document.getElementById("typed-text");
 
 if (typedText) {
-  const phrases = ["Software Developer", "Data Enthusiast", "Cybersecurity Explorer"];
+  const phrases = ["Software Developer", "Full-Stack Developer", "Data Scientist"];
   let phraseIndex = 0;
   let letterIndex = 0;
 
