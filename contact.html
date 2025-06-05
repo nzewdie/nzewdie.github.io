@@ -8,18 +8,23 @@
 </head>
 <body>
   <header>
-    <h1>Contact</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a href="resume.pdf" download class="resume-btn">📄 Download Resume</a>
-    <button id="toggle-dark" aria-label="Toggle dark mode">
+    <div class="header-left">
+      <a href="index.html" class="site-title">Nahom Zewdie</a>
+    </div>
+    <div class="header-center">
+      <nav>
+        <p><span id="typed-text"></span></p>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <button id="toggle-dark" aria-label="Toggle dark mode">
         <span id="theme-icon">🌙</span>
       </button>
-      
+    </div>
   </header>
 
   <main class="fade-in">
