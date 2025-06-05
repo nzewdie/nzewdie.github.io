@@ -309,10 +309,6 @@ body.dark-mode .fill {
   line-height: 1.6;
 }
 
-
-
-
-
 .triangle-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
