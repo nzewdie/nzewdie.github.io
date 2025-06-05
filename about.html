@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me | Your Name</title>
+  <title>About | Nahom Zewdie</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,26 +11,82 @@
     <div class="header-left">
       <a href="index.html" class="site-title">Nahom Zewdie</a>
     </div>
-    <div class="header-center">
-      <nav>
-        <p><span id="typed-text"></span></p>
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+    <nav class="header-center">
+      <p><span id="typed-text"></span></p>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="header-right">
       <button id="toggle-dark" aria-label="Toggle dark mode">
         <span id="theme-icon">🌙</span>
       </button>
     </div>
   </header>
-  
 
-  <main class="fade-in">
-    <p>I hold a B.S. in Information Science from the University of Maryland, where I maintained a 3.8 GPA and earned Dean's List honors. I love building software, analyzing data, and exploring cybersecurity challenges.</p>
-  </main>
+ <main class="fade-in">
+  <div class="triangle-layout">
+
+    <section class="grid-item courses courses-section">
+      <h2>Major-Related Courses</h2>
+      <ul>
+        <li>Object Oriented Programming</li>
+        <li>Database Design and Modeling</li>
+        <li>Statistics</li>
+        <li>Human-Centered Cybersecurity</li>
+        <li>Advanced Data Science</li>
+        <li>Practical Hacking</li>
+        <li> Dynamic Web Application </li>
+        <li>Data Sources and Manipulation</li>
+
+      </ul>
+    </section>
+
+    <div class="grid-item about-circle">About Me</div>
+
+    <section class="grid-item skills skills-section">
+      <h2>Skills</h2>
+      <div class="skill">
+        <label>Python</label>
+        <div class="bar"><div class="fill intermediate"></div></div>
+      </div>
+      <div class="skill">
+        <label>Java</label>
+        <div class="bar"><div class="fill intermediate"></div></div>
+      </div>
+      <div class="skill">
+        <label>HTML/CSS</label>
+        <div class="bar"><div class="fill expert"></div></div>
+      </div>
+      <div class="skill">
+        <label>JavaScript</label>
+        <div class="bar"><div class="fill intermediate"></div></div>
+      </div>
+      <div class="skill">
+        <label>SQL</label>
+        <div class="bar"><div class="fill novice"></div></div>
+      </div>
+      <div class="skill">
+        <label>ReactJs</label>
+        <div class="bar"><div class="fill intermediate"></div></div>
+      </div>
+    </section>
+
+    <section class="grid-item hobbies hobbies-section">
+      <h2>Hobbies & Projects</h2>
+      <p>
+        Outside of academics, I enjoy playing sports, especially soccer and basketball. I also love working on small hardware and software projects, such as a moisture-detecting plant system that alerts me when it needs watering. I’m always exploring new ways to merge tech and creativity.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+  
+  
+  
+  
 
   <footer>
     <p>© 2025 Nahom Zewdie</p>
