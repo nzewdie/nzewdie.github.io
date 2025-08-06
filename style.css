@@ -309,6 +309,10 @@ body.dark-mode .fill {
   line-height: 1.6;
 }
 
+
+
+
+
 .triangle-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -369,6 +373,157 @@ body.dark-mode .fill {
   transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s, color 0.3s;
 }
 
+.more-projects {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #ad501210; /* light blue background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 122, 204, 0.1);
+}
+
+.more-projects h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #053555;
+}
+
+.more-projects-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.more-projects-btn:hover {
+  background-color: #005f99;
+  transform: scale(1.05);
+}
+
+/* Project Card Styling */
+.project {
+  background-color: #ffffff;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 122, 204, 0.1);
+  border-left: 5px solid #007acc;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 122, 204, 0.15);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #007acc;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.project .description {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.project .tech {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.project a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007acc;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #005f99;
+}
+
+/* === Dark Mode === */
+body.dark-mode .project {
+  background-color: #1a1a1a;
+  border-left-color: #f0c040;
+  box-shadow: 0 4px 12px rgba(240, 192, 64, 0.1);
+}
+
+body.dark-mode .project h3 {
+  color: #f0c040;
+}
+
+body.dark-mode .project .description {
+  color: #eee;
+}
+
+body.dark-mode .project .tech {
+  color: #ccc;
+}
+
+body.dark-mode .project a {
+  background-color: #f0c040;
+  color: #121212;
+}
+
+body.dark-mode .project a:hover {
+  background-color: #d6a800;
+}
+
+/* === Contact Section Styling === */
+.contact-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 122, 204, 0.1);
+  text-align: center;
+  border-left: 5px solid #007acc;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #007acc;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.contact-section a {
+  color: #007acc;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+  color: #005f99;
+  text-decoration: underline;
+}
+
+
+
+
+
 /* === Dark Mode Styles === */
 body.dark-mode .courses,
 body.dark-mode .skills,
@@ -385,7 +540,71 @@ body.dark-mode .about-circle {
   color: #f0c040;
   box-shadow: 0 0 15px rgba(240, 192, 64, 0.7);
 }
+/* Dark mode support */
+body.dark-mode .more-projects {
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 12px rgba(240, 192, 64, 0.1);
+}
 
+body.dark-mode .more-projects h2 {
+  color: #f0c040;
+}
+
+body.dark-mode .more-projects-btn {
+  background-color: #f0c040;
+  color: #121212;
+}
+
+body.dark-mode .more-projects-btn:hover {
+  background-color: #d6a800;
+}
+/* === Dark Mode === */
+body.dark-mode .project {
+  background-color: #1a1a1a;
+  border-left-color: #f0c040;
+  box-shadow: 0 4px 12px rgba(240, 192, 64, 0.1);
+}
+
+body.dark-mode .project h3 {
+  color: #f0c040;
+}
+
+body.dark-mode .project .description {
+  color: #eee;
+}
+
+body.dark-mode .project .tech {
+  color: #ccc;
+}
+
+body.dark-mode .project a {
+  background-color: #f0c040;
+  color: #121212;
+}
+
+body.dark-mode .project a:hover {
+  background-color: #d6a800;
+}
+/* === Dark Mode === */
+body.dark-mode .contact-section {
+  background-color: #1a1a1a;
+  color: #eee;
+  border-left-color: #f0c040;
+  box-shadow: 0 4px 12px rgba(240, 192, 64, 0.1);
+}
+
+body.dark-mode .contact-section h2 {
+  color: #f0c040;
+}
+
+body.dark-mode .contact-section a {
+  color: #f0c040;
+}
+
+body.dark-mode .contact-section a:hover {
+  color: #d6a800;
+
+}
 
 
 
